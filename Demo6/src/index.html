@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="AppDemo6Module">
+    <head>
+        <title>Demo6, Promise</title>
+
+        <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+        <script type="text/javascript" src="vendor/angular-route/angular-route.min.js"></script>
+
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="app_config.js"></script>
+
+        <script type="text/javascript" src="pages/pageA/pageA.js"></script>
+        <script type="text/javascript" src="pages/pageA/pageA_config.js"></script>
+        <script type="text/javascript" src="pages/pageA/pageA_controller.js"></script>
+
+        <script type="text/javascript" src="pages/pageB/pageB.js"></script>
+        <script type="text/javascript" src="pages/pageB/pageB_config.js"></script>
+        <script type="text/javascript" src="pages/pageB/pageB_controller.js"></script>
+
+        <script type="text/javascript" src="pages/pageC/pageC.js"></script>
+        <script type="text/javascript" src="pages/pageC/pageC_config.js"></script>
+        <script type="text/javascript" src="pages/pageC/pageC_controller.js"></script>
+
+        <script type="text/javascript" src="service/backendService.js"></script>
+        <script type="text/javascript" src="service/backendServiceFactory.js"></script>
+
+    </head>
+    <body>
+
+    <a href="#/pageA">PageA</a>
+    <a href="#/pageB">PageB</a>
+    <a href="#/pageC">PageC</a>
+
+    <div ng-view></div>
+    
+    </body>
+</html>

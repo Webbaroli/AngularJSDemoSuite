@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="AppDemo7Module">
+    <head>
+        <title>Demo7, Routing avanzato</title>
+
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+
+        <script type="text/javascript" src="vendor/angular/angular.js"></script>
+        <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+        <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="app_config.js"></script>
+
+        <script type="text/javascript" src="pages/pageA/pageA.js"></script>
+        <script type="text/javascript" src="pages/pageA/pageA_config.js"></script>
+        <script type="text/javascript" src="pages/pageA/pageA_controller.js"></script>
+        <script type="text/javascript" src="pages/pageA/view1_controller.js"></script>
+        <script type="text/javascript" src="pages/pageA/view2_controller.js"></script>
+        <script type="text/javascript" src="pages/pageA/view3_controller.js"></script>
+        <script type="text/javascript" src="pages/pageA/view4_controller.js"></script>
+
+        <script type="text/javascript" src="pages/pageB/pageB.js"></script>
+        <script type="text/javascript" src="pages/pageB/pageB_config.js"></script>
+        <script type="text/javascript" src="pages/pageB/pageB_controller.js"></script>
+
+        <script type="text/javascript" src="pages/pageC/pageC.js"></script>
+        <script type="text/javascript" src="pages/pageC/pageC_config.js"></script>
+        <script type="text/javascript" src="pages/pageC/pageC_controller.js"></script>
+
+    </head>
+    <body>
+
+    <a ui-sref="pageA">PageA</a>
+    <a ui-sref="pageB">PageB</a>
+    <a ui-sref="pageC">PageC</a>
+
+    <div ui-view></div>
+    
+    </body>
+</html>

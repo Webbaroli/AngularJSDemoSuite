@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="AppDemo3Module">
+    <head>
+        <title>Demo3, Scope Hell</title>
+
+        <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+        <script type="text/javascript" src="app_demo_3.js"></script>
+
+    </head>
+    <body>
+
+    Rootscope - passaggio per "valore": <input type="text" ng-model="varRootScope" />
+    <br>
+
+    <div ng-controller="MainController" >
+        {{nomeController}} - passaggio per "valore": <input type="text" ng-model="varRootScope" />
+        <br>
+
+        <div ng-controller="ControllerA">
+            {{nomeController}} - passaggio per "valore": <input type="text" ng-model="varRootScope" />
+            <br>
+            <div ng-controller="ControllerAA">
+                {{nomeController}} - passaggio per "valore": <input type="text" ng-model="varRootScope" />
+                <br>
+            </div>
+            <div ng-controller="ControllerAB">
+                {{nomeController}} - passaggio per "valore": <input type="text" ng-model="varRootScope" />
+                <br>
+            </div>
+        </div>
+        <div ng-controller="ControllerB">
+            {{nomeController}} - passaggio per "valore": <input type="text" ng-model="varRootScope" />
+            <br>
+            <div ng-controller="ControllerBA">
+                {{nomeController}} - passaggio per "valore": <input type="text" ng-model="varRootScope" />
+                <br>
+            </div>
+            <div ng-controller="ControllerBB">
+                {{nomeController}} - passaggio per "valore": <input type="text" ng-model="varRootScope" />
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    Rootscope - passaggio per "riferimento": <input type="text" ng-model="rootData.varRootScope" />
+    <br>
+
+    <div ng-controller="MainController" >
+        {{nomeController}} - passaggio per "riferimento": <input type="text" ng-model="rootData.varRootScope" />
+        <br>
+
+        <div ng-controller="ControllerA">
+            {{nomeController}} - passaggio per "riferimento": <input type="text" ng-model="rootData.varRootScope" />
+            <br>
+            <div ng-controller="ControllerAA">
+                {{nomeController}} - passaggio per "riferimento": <input type="text" ng-model="rootData.varRootScope" />
+                <br>
+            </div>
+            <div ng-controller="ControllerAB">
+                {{nomeController}} - passaggio per "riferimento": <input type="text" ng-model="rootData.varRootScope" />
+                <br>
+            </div>
+        </div>
+        <div ng-controller="ControllerB">
+            {{nomeController}} - passaggio per "riferimento": <input type="text" ng-model="rootData.varRootScope" />
+            <br>
+            <div ng-controller="ControllerBA">
+                {{nomeController}} - passaggio per "riferimento": <input type="text" ng-model="rootData.varRootScope" />
+                <br>
+            </div>
+            <div ng-controller="ControllerBB">
+                {{nomeController}} - passaggio per "riferimento": <input type="text" ng-model="rootData.varRootScope" />
+                <br>
+            </div>
+
+        </div>
+    </div>
+    </body>
+</html>

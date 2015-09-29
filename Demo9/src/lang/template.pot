@@ -1,0 +1,13 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: src/app/layout/guest/test/test_content.html:6
+msgid "Test"
+msgstr ""
+
+#: src/app/layout/guest/test/test_content.html:3
+msgid "Username pippo to login, with any password."
+msgstr ""

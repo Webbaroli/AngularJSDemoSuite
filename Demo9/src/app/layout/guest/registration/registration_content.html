@@ -1,0 +1,21 @@
+<div>
+    <h2>Registration</h2>
+    <form name="form" ng-submit="registration()" role="form">
+        <div class="form-group">
+            <input placeholder="Username" type="text" name="username" id="username" class="form-control" ng-model="registrationData.username" required />
+        </div>
+        <div class="form-group">
+            <input placeholder="Password" type="password" name="password" id="password" class="form-control" ng-model="registrationData.password" required />
+        </div>
+        <div class="form-group">
+            <input placeholder="Confirm Password" type="password" name="confirmPassword" id="confirmPassword" class="form-control" ng-model="registrationData.confirmPassword" required />
+        </div>
+        <div class="form-group">
+            <input placeholder="Email" type="email" name="email" id="email" class="form-control" ng-model="registrationData.email" required />
+        </div>
+        <div class="form-actions">
+            <button type="submit" ng-disabled="form.$invalid || executingRegistration" class="btn btn-primary">Registration</button>
+        </div>
+    </form>
+
+</div>

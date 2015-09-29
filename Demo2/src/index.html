@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="AppDemo2Module">
+    <head>
+        <title>Demo2, Primo Modulo</title>
+
+        <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+        <script type="text/javascript" src="app_demo_2.js"></script>
+
+    </head>
+    <body>
+
+        <div ng-controller="AppDemo2Controller">
+
+            <h1>{{helloMessage}}</h1>
+
+            <div>
+                Scrivi il tuo nome: <input type="text" ng-model="name" />
+            </div>
+
+            <h1>Hello {{ name }}</h1>
+
+            <br>
+
+            <button ng-click="visualizzaAlert()">Visualizza alert nome!</button>
+        </div>
+    </body>
+</html>

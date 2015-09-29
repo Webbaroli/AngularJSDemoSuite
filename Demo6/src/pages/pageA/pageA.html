@@ -1,0 +1,10 @@
+<div>
+    <h1>PAGE A TEMPLATE</h1>
+    <br>
+    <br>
+    <button ng-click="backendRejectResult(false)" ng-show="flagReject">Set BackendResult = ok</button>
+    <button ng-click="backendRejectResult(true)" ng-show="!flagReject">Set BackendResult = error</button>
+    <br>
+    <button ng-click="chiamataAlBackend()">Get messaggio dal backend</button>
+    Messaggio dal server: {{messaggio}}
+</div>

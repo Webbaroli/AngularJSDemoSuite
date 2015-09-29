@@ -1,0 +1,13 @@
+{
+  "name": "demo1",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Demo1 - Hello World",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "bower install"
+  },
+  "dependencies": {
+    "bower": "^1.5.2"
+  }
+}

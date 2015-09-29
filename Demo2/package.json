@@ -1,0 +1,13 @@
+{
+  "name": "demo2",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Demo2 - Primo Modulo",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "bower install"
+  },
+  "dependencies": {
+    "bower": "^1.5.2"
+  }
+}

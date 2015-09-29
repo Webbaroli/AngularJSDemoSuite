@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html ng-app="Demo9AppModule">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo 9, Gettext Translation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- compiled CSS -->
+        <% styles.forEach( function ( file ) { %>
+            <link rel="stylesheet" type="text/css" href="<%= file %>" />
+        <% }); %>
+
+        <!-- compiled JavaScript -->
+        <% scripts.forEach( function ( file ) { %>
+            <script type="text/javascript" src="<%= file %>"></script>
+        <% }); %>
+
+    </head>
+    <body>
+
+        <div ui-view></div>
+
+    </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "demo5",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Demo5 - Routing",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "bower install"
+  },
+  "dependencies": {
+    "bower": "^1.5.2"
+  }
+}

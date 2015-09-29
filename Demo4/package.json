@@ -1,0 +1,13 @@
+{
+  "name": "demo4",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Demo4 - Costrutti del linguaggio",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "bower install"
+  },
+  "dependencies": {
+    "bower": "^1.5.2"
+  }
+}
